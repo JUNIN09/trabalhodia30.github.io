@@ -1,53 +1,64 @@
 :root {
     --cor-do-fundo: #2c2f33;
+    --cor-do-header: #99aab5;
+    --cor-da-fonte: #ffffff;
+    --cor-da-lista:	#7289da;
 }
 
 body {
-    background-color: var(--cor-da-fonte);
+    background-color: var(--cor-do-fundo);
+    margin: 0;
 }
 
 header {
-    background-color: gray;
-    color: white;
+    background-color: var(--cor-do-header);
+    color: var(--cor-da-fonte);
+    padding: 40px;
     max-width: 100%;
-    padding: 50px;
-    overflow: hidden;
+    box-sizing: border-box;
 }
 
 main {
-    background-color: white;
+    background-color: var(--cor-do-header);
     display: inline;
-    width: 100%;
+    max-width: 100%;
+    color: var(--cor-da-fonte);
 }
 
 li {
     text-decoration: none;
     list-style: none;
-    background-color: aqua;
+    background-color: var(--cor-da-lista);
     max-width: 50%;
-    margin-bottom: 5px;
-    font-size: larger;
-    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    padding: 25px 15px;
+    text-align: center;
 }
 
 footer {
-    background-color: gray;
-    color: white;
+    background-color:var(--cor-do-header);
+    color: var(--cor-da-fonte);
     bottom: 0;
     position: fixed;
-    width: 99%;
-    text-align: center;
+    width: 100%; 
+    padding: 20px;
+}
+
+footer h1 {
+    float: left ;
+
 }
 
 .lista {
     display: block;
     float: left;
-    width: 20%;
+    width: 18%;
 }
 
 .texto {
     display: block;
     float: right;
-    width: 80%;
-    font-size: large;
+    width: 82%;
+    font-size: 22px;
 }
